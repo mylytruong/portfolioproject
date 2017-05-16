@@ -1,0 +1,328 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+  background-color:#FFF;
+  background-repeat:no-repeat;
+  background-size:contain;
+  position:relative;
+  overflow-x:hidden;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right:0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: 742px;
+  text-align:center;
+  padding-left:20px;
+  padding-right:20px;
+  font-family:Brandon Grotesque, Helvetica, sans-serif;
+  color:#0CC;
+  font-size:16px;
+  font-weight:100;
+}
+
+
+
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 700px;
+  margin-bottom: 200px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  margin-bottom:100px;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 700px;
+  margin-top:0px;
+  background-size:cover;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 700px;
+}
+.space {
+	height:900px;
+	background-image:url(img/10942b_635447ef95df4c4fbf4ce022b664d1b2-mv2.jpg);
+	opacity:0.7;
+	background-size:cover;
+	background-position:center;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*Start here*/
+.item {
+    position: absolute;
+	
+}
+
+.item h2 {
+    text-align:center;
+    position: absolute;
+    line-height: 125px;
+    width: 100%;
+}
+
+svg {
+   -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.circle_animation {
+  stroke-dasharray: 440; /* this value is the pixel circumference of the circle */
+  stroke-dashoffset: 440;
+  transition: all 1s linear;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 40px;
+  text-align: center;
+  margin-top:20px;
+}
+
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+h1 {
+	text-align:center;
+	font-size:45px;
+	font-family:Lulo Clean, Gadget, sans-serif;
+	color:#999;
+	margin-top:180px;
+
+}
+.text2 {
+	font-family:Lulo Clean, Helvetica, sans-serif;
+	font-size:25px;
+	color:#999;
+}
+hr {
+	display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #3CC;
+	width:30px;
+    padding: 0; 
+
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.space2 {
+	height:900px;
+	background-image:url(img/10942b_e1ba7f03606340989bd6c37ded7cf6f6-mv2.jpg); 
+	background-position:center;
+	background-size:cover;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	margin-top:100px;
+}
+
+.image { 
+   width:100%; /* for IE 6 */
+   margin-left:650px;
+   border:hidden;
+  
+}
+
+.about { 
+   position: relative;
+   top:400px; 
+   right: 600px; 
+   width: 500px; 
+   margin-left:150px;
+   margin-top:-210px;
+   text-align:left;
+   font-family:"Linotype Didot", Arial, Helvetica, sans-serif;
+   font-weight:lighter;
+   font-size:14px;
+}
+
+.him {
+	width:359px; 
+	height:508px;
+	border:hidden;
+}
+
+.thumbnail {
+  position: relative;
+  width: 431px;
+  height: 260px;
+  border:hidden;
+  border:1px;
+  overflow: hidden;
+  margin-left:-6px;
+  margin-bottom:5px;
+  margin-top:-8px;
+  float: right;
+  text-align:center;
+}
+
+.thumbnail img {
+	position: absolute;
+	height: auto;
+	width: 550px;
+	clip: rect(0px,432px,280px,0px);
+	margin-left: -8px;
+	margin-top: -8px;
+	margin-bottom:5px;
+	left: 1px;
+}
+
+.contact {
+	margin-top:700px;
+	height:700px;
+	background-image:url(img/dddd.jpg);
+	background-size:cover;
+	margin-bottom:100px;
+}
+
+.box {
+	margin-left:450px;
+	margin-right:300px;
+	border-color:#3CC;
+	border-width:thin;
+	color:#3CC;
+}
+
+.textInput {
+	color:#3CC;
+	border-color:#3CC;
+}
+
+
+
+
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px; 
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+	background-color:transparent;
+	
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+/*Start here*/
+.thumbnail{
+
+}
+.gal:hover{
+ transform: scale(1.3);
+ -webkit-transform: scale(1.3);
+ -moz-transform: scale(1.3);
+ -ms-transform: scale(1.3);
+ -o-transform: scale(1.3);
+}
+
+.navi {
+	margin-left:50px;
+	font-family: Brandon Grotesque, Helvetica, sans-serif;
+	font-size:17px;
+	text-align:center;
+	font-weight:100;
+}
+span {
+	color:#3CC;
+	font-size:20px;
+}
+.rea {
+	font-size:20px;
+	color:#999;
+}
